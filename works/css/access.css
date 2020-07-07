@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+main {
+	width: 600px;
+	margin: 20px auto;
+}
+#distance {
+	margin-top: 40px;
+}
+iframe {
+	margin-bottom: 10px;
+}
+
+
+h2 {
+	font-family: "Sawarabi Mincho", "ＭＳ ゴシック", "MS Gothic", "Osaka－等幅", Osaka-mono, monospace;
+	font-size: 28px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+	color: #000;
+	background-image: url(../images/h2-background.png);
+	text-indent: 0.8em;
+}
+p {
+	padding-left: 15px;
+	font-size: 18px;
+}
+.btn {
+  margin-left 15px;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #228b22;
+  color: #FFF;
+  border-bottom: solid 4px #004d00;
+  border-radius: 3px;
+}
+.btn:active {
+  transform: translateY(4px);
+  border-bottom: none;
+}
+@media only screen and (max-width:750px){
+
+main {
+	width: 100%;
+}
+
+
+
+}

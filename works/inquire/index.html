@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name ="viewport" content="width= device-width">
+<title>	須見・小山法律事務所</title>
+<link href="../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+<link href="../css/inquire.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+<link rel="icon" href="../favicon.ico">
+<script src="../js/jquery-2.1.4.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/inquire.js"></script>
+</head>
+
+<body id="inquire">
+
+<header>
+
+<h1><img id="logo" src="../images/header.png" width="420" height="60" alt="須見・小山法律事務所"></h1>
+	<div id="tgrNav" class="menu"><span>menu</span></div>
+    <nav id="nav">
+        <ul>
+        <li class="nav1"><a href="../index.html">ホーム</a></li>
+        <li class="nav2"><a href="../about/index.html">事務所紹介</a></li>
+        <li class="nav3"><a href="../business/index.html">業務内容</a></li>
+        <li class="nav4"><a href="../member/index.html">弁護士紹介</a></li>
+        <li class="nav5"><a href="../fee/index.html">料金・費用</a></li>
+        <li class="nav6"><a href="index.html">お問い合わせ</a></li>
+        <li class="nav7"><a href="../access/index.html">アクセス</a></li>
+      </ul>
+  </nav>
+</header>
+<section>
+<h2>お問い合わせフォーム</h2>
+<p class="attention">※は必須項目です</p>
+<div id="radioSection">
+<form action="form.php" method="post">
+
+	<table border=0 width=100% height="500">
+		<tr id="textSection1">
+			<th>※氏名<p class="alert">入力してください</p></th>
+			<td><input type="text" id="text1" name="onamae" value=""></td>
+		</tr>
+		<tr id="textSection2">
+			<th>※氏名(カタカナ)<p class="alert">入力してください</p></th>
+			<td><input type="text" id="text2" name="kanaonamae" value=""></td>
+		</tr>
+		<tr id="textSection3">
+			<th>※e-mail<p class="alert">入力してください</p></th>
+			<td><input type="text" id="text3" name="email" value=""></td>
+		</tr>
+		<tr>
+			<th>電話番号</th>
+			<td><input type="text" name="phonenumber" value=""></td>
+		</tr>
+		<tr id="radioSection">
+			<th>※お問い合わせ内容<p class="alert">選択してください</p></th>
+			<td>
+				<input type="radio" name="radio" value="Radio1" id="consultation"><label for="consultation">相談希望</label>
+				<input type="radio" name="radio" value="Radio2" id="seminar"><label for="seminar">セミナー参加希望</label>
+				<input type="radio" name="radio" value="Radio3" id="interview"><label for="interview">取材</label>
+				<input type="radio" name="radio" value="Radio4" id="other"><label for="other">その他</label>
+			</td>
+		</tr>
+		<tr>
+			<th>お問い合わせ概要</th>
+			<td>
+			<textarea name="question" cols="50" rows="5"></textarea></td>
+		</tr>
+		<tr>
+			<th>ご希望の返信方法</th>
+			<td>
+			<input type="checkbox" name="reply" value="電話" id="hobby1"><label for="phone">電話</label>
+			<input type="checkbox" name="reply" value="e-mail"id="hobby2"><label for="email">e-mail</label>
+			</td>
+		</tr>
+		<tr>
+			<th  colspan="2" id="setarea"><input type="reset"  value="リセット">
+			<input type="submit" value="入力内容の確認" id="submitBtn"></th>
+		</tr>
+	</table>
+</div><!--#radioSection-->
+</section>
+<footer>
+    <ul>
+        <li class="nav1"><a href="../index.html">ホーム</a></li>
+        <li class="nav2"><a href="../about/index.html">事務所紹介</a></li>
+        <li class="nav3"><a href="../business/index.html">業務内容</a></li>
+        <li class="nav4"><a href="../member/index.html">弁護士紹介</a></li>
+        <li class="nav5"><a href="../fee/index.html">料金・費用</a></li>
+        <li class="nav6"><a href="index.html">お問い合わせ</a></li>
+        <li class="nav7"><a href="../access/index.html">アクセス</a></li>
+    </ul>
+  <p><small>Copyright &copy; Sumi&amp;Koyama Law Office All Right Reserved</small></p>
+</footer>
+</body>
+</html>

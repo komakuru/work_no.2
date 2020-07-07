@@ -1,0 +1,217 @@
+@charset "utf-8";
+/* CSS Document */
+
+nav ul {
+	display: flex;
+	justify-content: center;
+}
+nav ul li {
+	background-image: url(../images/nav_hover.png);
+	width: 142px;
+	height: 40px;
+	background-repeat: no-repeat;
+	text-align: center;
+	line-height: 45px;
+	font-size: 17px;
+	margin-bottom: 20px;
+	font-family: "Sawarabi Mincho", "ＭＳ ゴシック", "MS Gothic", "Osaka－等幅", Osaka-mono, monospace;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+nav ul li:hover {
+	float: left;
+	background-image: url(../images/nav.png);
+	width: 142px;
+	height: 40px;
+	background-repeat: no-repeat;
+}
+nav li a:hover{
+	color: #000;
+}
+#logo {
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+h1{
+	text-align: center;
+}
+nav {
+	background-image: url(../images/nav_background_sk.png);
+	background-repeat: repeat-x;
+}
+.menu {
+	color: transparent;
+	display: none;
+	width: 40px;
+	height: 40px;
+	padding: 5px 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.menu::before, .menu::after, .menu span {
+	background-color: #004d00;
+	display: block;
+	width: 40px;
+	height: 2px;
+	position: absolute;
+	top: 60%;
+	left: 15px;
+	transition-duration: .5s;
+}
+.menu::before, .menu::after {
+	content: "";
+}
+.menu::before {
+	transform: translateY(-15px);
+}
+.menu.is_active::before {
+	transform: translateY(-50%) rotate(-45deg);
+}
+.menu::after {
+	transform: translateY(15px);
+}
+.menu.is_active::after {
+	transform: translateY(-50%) rotate(45deg);
+}
+.menu span {
+	transform: translateY(-50%);
+}
+.menu.is_active span {
+	display:none;
+}
+#container {
+	width: 994px;
+	margin: 0 auto;
+}
+
+#mainVisual ul li {
+	margin-bottom: 20px;
+}
+footer {
+	clear: both;
+	background-color: #004d00;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #FFF;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 75%;
+}
+
+footer ul {
+	margin-bottom: 5px;
+}
+footer ul li {
+	display: inline;
+}
+footer ul li a{
+	color: #FFF;
+	text-decoration: none;
+}
+
+footer ul li+li::before{
+	content:" | ";
+}
+
+
+#home nav .nav1 a,
+#about nav .nav2 a,
+#business nav .nav3 a,
+#access nav .nav7 a,
+#fee nav .nav5 a,
+#inquire nav .nav6 a,
+#member nav .nav4 a{
+	display: block;
+	background-image: url(../images/nav.png);
+	background-repeat: no-repeat;
+	width: 142px;
+	height: 40px;
+	color:#000;
+}
+#home footer .nav1 a,
+#about footer .nav2 a,
+#business footer .nav3 a,
+#access footer .nav7 a,
+#fee footer .nav5 a,
+#inquire footer .nav6 a,
+#member footer .nav4 a{
+	text-decoration: underline;
+}
+
+@media only screen and (max-width:750px){
+#home nav .nav1 a,
+#about nav .nav2 a,
+#business nav .nav3 a,
+#access nav .nav7 a,
+#fee nav .nav5 a,
+#inquire nav .nav6 a,
+#member nav .nav4 a{
+	width: 100%;
+	background-image: none;
+	background-color: #FFF;
+	color: #004d00;S
+}
+
+nav {
+	background-image: none;
+	display: none;
+	z-index: 20;
+}
+#logo {
+	box-sizing: border-box;
+	max-width: 100%;
+	height: auto;
+	padding: 8px 5px 8px 60px ;
+}
+nav ul {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+nav ul li {
+	height: 40px;
+	text-align: center;
+	line-height: 45px;
+	width: 100%;
+	font-size: 17px;
+	margin-bottom: 2px;
+	font-family: "Sawarabi Mincho", "ＭＳ ゴシック", "MS Gothic", "Osaka－等幅", Osaka-mono, monospace;
+	background-image: none;
+	background-color: #004d00;
+}
+nav ul li a{
+	color: #FFFFFF;
+	display: block;
+	
+}
+nav ul li:hover {
+	height: 40px;
+	background-color: #FFF;
+	color: #004d00;
+	background-image: none;
+	width: 100%;
+}
+nav ul li a:hover {
+	color: #004d00;
+}
+nav span {
+	font-size: .875rem;
+	display: block;
+}
+.pc_none, .menu {
+	display: block;
+}
+#overlay {
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	top: 360px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}

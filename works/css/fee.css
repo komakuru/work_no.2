@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+section{
+	width: 600px;
+	margin: 10px auto;
+}
+th{
+	width: 37%;
+}
+tr:first-child td{
+	width: 25%;
+}
+tr:second-child td{
+	width: 38%;
+}
+
+
+h2{
+	width: 100%;
+	font-size: 24px;
+	background-image: url(../images/h2-background.png);
+	margin-top: 5px;
+	margin-right: auto;
+	margin-bottom: 5px;
+	margin-left: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+@media only screen and (max-width:750px){
+section{
+	width: 100%;
+	heigh: auto;
+}
+}

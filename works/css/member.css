@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+table{
+	margin: 10px auto;
+}
+
+.onamae{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+@media only screen and (max-width:750px){
+table{
+	width: 100%;
+	height: auto;
+}	
